@@ -1,0 +1,8 @@
+Compilation:
+
+c++ --std=c++11 -o main main.cpp nav_bar.cpp HaloAPI.cpp SpartanProfile.cpp PlaylistRanksContainer.cpp MetaDataLookup.cpp RecentMatchesContainer.cpp jsoncpp.cpp -lwthttp -lwt -lcurl -lcurlpp -I/usr/local/include -L/usr/local/lib -I/Users/colin/Documents/wtHaloViewer
+
+
+Running:
+
+./main --docroot docroot --http-address 0.0.0.0 --http-port 8080
