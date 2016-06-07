@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+main
 
 # Packages #
 ############
@@ -37,6 +38,6 @@ ehthumbs.db
 Thumbs.db
 
 HaloAPI.cpp
+
 wtHaloViewer.xcodeproj
 
-main
