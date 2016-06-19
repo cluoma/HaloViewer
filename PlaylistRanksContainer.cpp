@@ -189,7 +189,7 @@ void PlaylistRanksContainer::stats_to_table(Wt::WTable *table, int row, int play
     std::string win_perc = rounded_string(win_rate, 1, 100.0) + "%";
     new Wt::WText(win_perc, table->elementAt(row, 7));
     
-    double kda = ( (float)playlist_stats[playlist_index].total_deaths_ + ((float)playlist_stats[playlist_index].total_assists_/3.0) )/(float)playlist_stats[playlist_index].total_deaths_;
+    double kda = ( (float)playlist_stats[playlist_index].total_kills_ + ((float)playlist_stats[playlist_index].total_assists_/3.0) )/(float)playlist_stats[playlist_index].total_deaths_;
     new Wt::WText(rounded_string(kda, 2, 1.0), table->elementAt(row, 8));
 }
 
